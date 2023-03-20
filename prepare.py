@@ -50,7 +50,7 @@ def prep_telco():
     and encoding categorical variables
     '''
     df = acquire.get_telco_data()
-    df = df.drop(columns=['payment_type_id', 'internet_service_type_id', 'contract_type_id', 'customer_id'])
+    df = df.drop(columns=['payment_type_id', 'internet_service_type_id', 'contract_type_id'])
     df = df.replace('Yes', 1).replace('No', 0)
     df = df.replace('No phone service', 0)
     df = df.replace('No internet service', 0)
