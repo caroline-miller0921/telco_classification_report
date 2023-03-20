@@ -2,6 +2,7 @@ import env
 import acquire
 import pandas as pd
 from sklearn.model_selection import train_test_split
+from datetime import datetime
 
 def prep_titanic():
     '''
@@ -58,6 +59,11 @@ def prep_telco():
     df = pd.concat(
         [df, pd.get_dummies(df[['gender', 'contract_type', 'internet_service_type', 'payment_type']], 
                             drop_first=True)], axis=1)
+    df['signup_date'] = pd.to_datetime(df['signup_date'])
+    df['churn_month'] = pd.to_datetime(df['churn_month'])
+    df['time_with_telco'] = df['churn_month'] - df['signup_date']
+    df['churn_month'].fillna(0000-00-00, inplace=True)
+    df['signup_date'].fillna(0000-00-00, inplace=True)
     return df
 
 def split_data(df, target):
@@ -67,10 +73,13 @@ def split_data(df, target):
     version of the dataframe. Also you must provide the target
     at which you'd like the stratify (a feature in the DF)
     '''
+    print(df.shape)
     train_val, test = train_test_split(df, 
                                        train_size=.8,
                                        random_state=1349, 
                                        stratify=df[target])
+    print(train_val.shape)
+    print(test.shape)
     train, validate = train_test_split(train_val, 
                                        train_size=0.7,
                                        random_state=1349,
