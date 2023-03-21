@@ -38,6 +38,18 @@ question then became is there a relationship between being a senior citizen and 
 3. Is the mean total charges of those who pay for internet, phone, and streaming services more than those who do not?
 4. Do those who pay for internet, phone, and streaming services have greater tenures than those who do not?
 
+Steps to Reproduce:
+
+1. Download and save the modeules included in this respository to your working directory.
+2. Properly acquire the complete Dataframe from the 'telco_churn' dataframe from MySQL.
+3. Properly clean and wrangle the data.
+4. Conduct univariate, bivarrate, and multivariate analysis on the data using visualizations.
+5. Identify features which may be indicative of your target variable.
+6. Develop models to which evaluate using a train and validate dataset split from the cleaned dataframe.
+7. Decide on a best performing model using a logical evaluation metric.
+8. Predict outcomes with this model using the a test dataset and evaluate the model's test performance.
+9. Examine your findings and reflect upon conclusions, possible recommendations, possible next steps.
+
 Data Dictionary:
     0   customer_id                           7043 non-null   object        unique account number 
     1   gender                                7043 non-null   object        gender of the account holder
