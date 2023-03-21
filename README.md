@@ -62,7 +62,7 @@ Data Dictionary:
  19  internet_service_type                 7043 non-null   object        (None, DSL, Fiber optic)
  20  payment_type                          7043 non-null   object        (Electronic check, Mailed check, Bank               transfer, Credit card)
  21  churn_month                           7043 non-null   object        datetime of when the customer churned 
- 22  signup_date                           7043 non-null   datetime64[ns]datetime of when the customer signed
+ 22  signup_date                           7043 non-null   datetime64[ns] datetime of when the customer signed
  23  gender_Male                           7043 non-null   uint8          hot-code 
  24  contract_type_One year                7043 non-null   uint8          hot-code
  25  contract_type_Two year                7043 non-null   uint8          hot-code
@@ -71,4 +71,4 @@ Data Dictionary:
  28  payment_type_Credit card (automatic)  7043 non-null   uint8          hot-code
  29  payment_type_Electronic check         7043 non-null   uint8          hot-code
  30  payment_type_Mailed check             7043 non-null   uint8          hot-code
- 31  time_with_telco                       1869 non-null   timedelta64[ns]days difference between churn date and signup date (only applies to customers who have churned)
+ 31  time_with_telco                       1869 non-null   timedelta64[ns] days difference between churn date and signup date (only applies to customers who have churned)
