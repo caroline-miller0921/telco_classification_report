@@ -40,7 +40,7 @@ question then became is there a relationship between being a senior citizen and 
 
 Data Dictionary:
 
- 0   customer_id                           7043 non-null   object        unique account number 
+<!--  0   customer_id                           7043 non-null   object        unique account number 
  1   gender                                7043 non-null   object        gender of the account holder
  2   senior_citizen                        7043 non-null   int64         binary yes (1) or no (0)
  3   partner                               7043 non-null   int64         binary yes (1) or no (0)
@@ -72,3 +72,4 @@ Data Dictionary:
  29  payment_type_Electronic check         7043 non-null   uint8          hot-code
  30  payment_type_Mailed check             7043 non-null   uint8          hot-code
  31  time_with_telco                       1869 non-null   timedelta64[ns] days difference between churn date and signup date (only applies to customers who have churned)
+ -->
