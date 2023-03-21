@@ -39,35 +39,35 @@ question then became is there a relationship between being a senior citizen and 
 4. Do those who pay for internet, phone, and streaming services have greater tenures than those who do not?
 
 Data Dictionary:
- 0   customer_id                           7043 non-null   object        unique account number 
- 1   gender                                7043 non-null   object        gender of the account holder
- 2   senior_citizen                        7043 non-null   int64         binary yes (1) or no (0)
- 3   partner                               7043 non-null   int64         binary yes (1) or no (0)
- 4   dependents                            7043 non-null   int64         binary yes (1) or no (0) 
- 5   tenure                                7043 non-null   int64         binary yes (1) or no (0) 
- 6   phone_service                         7043 non-null   int64         binary yes (1) or no (0) 
- 7   multiple_lines                        7043 non-null   int64         binary yes (1) or no (0) 
- 8   online_security                       7043 non-null   int64         binary yes (1) or no (0) 
- 9   online_backup                         7043 non-null   int64         binary yes (1) or no (0) 
- 10  device_protection                     7043 non-null   int64         binary yes (1) or no (0) 
- 11  tech_support                          7043 non-null   int64         binary yes (1) or no (0) 
- 12  streaming_tv                          7043 non-null   int64         binary yes (1) or no (0) 
- 13  streaming_movies                      7043 non-null   int64         binary yes (1) or no (0) 
- 14  paperless_billing                     7043 non-null   int64         binary yes (1) or no (0) 
- 15  monthly_charges                       7043 non-null   float64       average monthly bill (USD)
- 16  total_charges                         7043 non-null   float64       total charges over tenure (USD) 
- 17  churn                                 7043 non-null   int64         binary yes (1) or no (0) 
- 18  contract_type                         7043 non-null   object        (Month-to-month, One year, two year) 
- 19  internet_service_type                 7043 non-null   object        (None, DSL, Fiber optic)
- 20  payment_type                          7043 non-null   object        (Electronic check, Mailed check, Bank               transfer, Credit card)
- 21  churn_month                           7043 non-null   object        datetime of when the customer churned 
- 22  signup_date                           7043 non-null   datetime64[ns] datetime of when the customer signed
- 23  gender_Male                           7043 non-null   uint8          hot-code 
- 24  contract_type_One year                7043 non-null   uint8          hot-code
- 25  contract_type_Two year                7043 non-null   uint8          hot-code
- 26  internet_service_type_Fiber optic     7043 non-null   uint8          hot-code
- 27  internet_service_type_None            7043 non-null   uint8          hot-code
- 28  payment_type_Credit card (automatic)  7043 non-null   uint8          hot-code
- 29  payment_type_Electronic check         7043 non-null   uint8          hot-code
- 30  payment_type_Mailed check             7043 non-null   uint8          hot-code
- 31  time_with_telco                       1869 non-null   timedelta64[ns] days difference between churn date and signup date (only applies to customers who have churned)
+    0   customer_id                           7043 non-null   object        unique account number 
+    1   gender                                7043 non-null   object        gender of the account holder
+    2   senior_citizen                        7043 non-null   int64         binary yes (1) or no (0)
+    3   partner                               7043 non-null   int64         binary yes (1) or no (0)
+    4   dependents                            7043 non-null   int64         binary yes (1) or no (0) 
+    5   tenure                                7043 non-null   int64         binary yes (1) or no (0) 
+    6   phone_service                         7043 non-null   int64         binary yes (1) or no (0) 
+    7   multiple_lines                        7043 non-null   int64         binary yes (1) or no (0) 
+    8   online_security                       7043 non-null   int64         binary yes (1) or no (0) 
+    9   online_backup                         7043 non-null   int64         binary yes (1) or no (0) 
+    10  device_protection                     7043 non-null   int64         binary yes (1) or no (0) 
+    11  tech_support                          7043 non-null   int64         binary yes (1) or no (0) 
+    12  streaming_tv                          7043 non-null   int64         binary yes (1) or no (0) 
+    13  streaming_movies                      7043 non-null   int64         binary yes (1) or no (0) 
+    14  paperless_billing                     7043 non-null   int64         binary yes (1) or no (0) 
+    15  monthly_charges                       7043 non-null   float64       average monthly bill (USD)
+    16  total_charges                         7043 non-null   float64       total charges over tenure (USD) 
+    17  churn                                 7043 non-null   int64         binary yes (1) or no (0) 
+    18  contract_type                         7043 non-null   object        (Month-to-month, One year, two year) 
+    19  internet_service_type                 7043 non-null   object        (None, DSL, Fiber optic)
+    20  payment_type                          7043 non-null   object        (Electronic check, Mailed check, Bank               transfer, Credit card)
+    21  churn_month                           7043 non-null   object        datetime of when the customer churned 
+    22  signup_date                           7043 non-null   datetime64[ns] datetime of when the customer signed
+    23  gender_Male                           7043 non-null   uint8          hot-code 
+    24  contract_type_One year                7043 non-null   uint8          hot-code
+    25  contract_type_Two year                7043 non-null   uint8          hot-code
+    26  internet_service_type_Fiber optic     7043 non-null   uint8          hot-code
+    27  internet_service_type_None            7043 non-null   uint8          hot-code
+    28  payment_type_Credit card (automatic)  7043 non-null   uint8          hot-code
+    29  payment_type_Electronic check         7043 non-null   uint8          hot-code
+    30  payment_type_Mailed check             7043 non-null   uint8          hot-code
+    31  time_with_telco                       1869 non-null   timedelta64[ns] days difference between churn date and signup date (only applies to customers who have churned)
